@@ -1,3 +1,4 @@
+'''
 Given a positive integer value N. The task is to find how many numbers less than 
 or equal to N have numbers of divisors exactly equal to 3.
 
@@ -5,6 +6,7 @@ Brute force Approach : T(n) = O(N*N)
 
 Run a for loop from 1 to N and then for each number x we can find the number of 
 factors and if the number of factors is 3 then we will add 1 to our answer.
+'''
 
 def hasThreeDivisors(n):
     number_of_factors = 0
@@ -19,12 +21,13 @@ def exactly3Divisors(N):
         if hasThreeDivisors(i):
             ans += 1
     return ans
-  
+'''  
 Optimized Brute Force: T(n) = O(n**1.5)
 
 run a for loop from 1 to N and then for each number x we can find the number of factors 
 and if the number of factors is 3 then we will add 1 to our answer. But this time we will
 use the sqrt(N) approach to find the number of factors.
+'''
 
 def hasThreeDivisors(n):
     number_of_factors = 2
@@ -41,7 +44,7 @@ def exactly3Divisors(N):
         if hasThreeDivisors(i):
             ans += 1
     return ans
-
+'''
 Optimized Solution : 
 
 We can optimize the above solution by simple observation. The observation is only perfect squares
@@ -52,6 +55,7 @@ Run a for loop from 1 to sqrt(N).
 For each i determine if i is prime or not if i is prime then increment the answer.
 To find if i is prime or not use the sqrt(N) approach as discussed here.
 Return the answer.
+'''
 
 import math
 def is_prime(self, n):
