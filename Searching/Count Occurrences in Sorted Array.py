@@ -1,6 +1,8 @@
+'''
 Given a sorted array arr[] and a number x, write a function that counts the occurrences of x in arr[]. Expected time complexity is O(logn) 
 
 Approach 1 : Use Binary Search 
+'''
 
 def search(nums, target, find_start_index):
     answer = -1
