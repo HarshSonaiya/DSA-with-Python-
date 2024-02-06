@@ -23,7 +23,7 @@ n = len(arr)
 x = 8
 findFirstAndLast(arr, n, x)
 
-Efficient Approach :
+Efficient Approach : T(n) = O(logn)
 
 For the first occurrence of a number 
 
