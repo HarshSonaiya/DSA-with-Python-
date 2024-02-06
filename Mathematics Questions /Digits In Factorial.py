@@ -1,3 +1,4 @@
+'''
 Given an integer N. Find the number of digits that appear in its factorial. 
 Factorial is defined as, factorial(n) = 1*2*3*4……..*N and factorial(0) = 1.
 
@@ -7,6 +8,7 @@ Count number of digits present in 'fact'by initializing variable 'd' with 0,
 to store number of digits in 'fact'.
 while 'fact' is not equal to 0, increase 'd' by 1 and divide 'fact' by 10.
 Return 'd' as answer.
+'''
 
 def factorial(n):
     fact = 1
@@ -25,7 +27,7 @@ def digits_in_factorial(N):
         fact //= 10
         d += 1
     return d
-
+'''
 Approach 2 : T(n) = O(n)
 
 The idea is to make use of properties of log:
@@ -65,6 +67,7 @@ log4 = 0.60206
 log5 = 0.69897
 log(5!) = (log1+log2+log3+log4+log5) = 2.07918
 So the number of digits in 5! is (1 + floor(2.07918)) which is 3.
+'''
 
 def digitsInFactorial(self,N):
         if(N==1):
