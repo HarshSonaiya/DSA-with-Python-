@@ -1,3 +1,4 @@
+'''
 Given a binary array arr[] of size N, which is sorted in non-increasing order, count the number of 1's in it. 
 
 Approach 1 : Time complexity: O(Log(N)) Auxiliary Space: O(log(N))
@@ -13,6 +14,7 @@ Check if the element at mid index is the last 1
 If the element is not last 1, move the low to right side recursively and return the result received from it.
 Otherwise, move the low to left recursively and return the result received from it.
 The following is the implementation of the above idea. 
+'''
 
 def countOnes(arr, low, high):
 
@@ -36,7 +38,7 @@ def countOnes(arr, low, high):
 
 arr = [1, 1, 1, 1, 0, 0, 0]
 print("Count of 1's in given array is", countOnes(arr, 0, len(arr)-1))
-
+'''
 Output
 Count of 1's in given array is 4
 
@@ -52,6 +54,7 @@ If the element is not last 1 then move the low to the right side (i.e, low = mid
 Check if the element at the middle index is last 1 then return mid + 1
 Otherwise move to low to right (i.e, low = mid + 1)
 Below is the implementation of the above approach:
+'''
 
 def countOnes(arr, n):
     low = 0
@@ -77,7 +80,7 @@ arr = [1, 1, 1, 1, 0, 0, 0]
 n = len(arr)
 
 print("Count of 1's in given array is ", countOnes(arr, n))
-
+'''
 Output
 Count of 1's in given array is 4
-
+'''
