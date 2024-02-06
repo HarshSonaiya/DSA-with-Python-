@@ -1,6 +1,8 @@
+'''
 Given a sorted array arr[] with possibly duplicate elements, the task is to find indexes of the first and last occurrences of an element x in the given array. 
 
 Basic Approach : T(n) = O(n)
+'''
 
 def findFirstAndLast(arr, n, x):
 	first = -1
@@ -22,7 +24,7 @@ arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]
 n = len(arr)
 x = 8
 findFirstAndLast(arr, n, x)
-
+'''
 Efficient Approach : T(n) = O(logn)
 
 For the first occurrence of a number 
@@ -48,6 +50,7 @@ d) else if(x < arr[mid])
 e) else
       return last(arr, (mid + 1), high, x, n);      
 f) otherwise return -1;
+'''
 
 def first(arr, low, high, x, n):
 	if(high >= low):
