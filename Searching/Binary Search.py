@@ -1,3 +1,4 @@
+'''
 Given a sorted array arr[] of n elements, write a function to search a given element x in arr[].
 
 Binary Search Algorithm: The basic steps to perform Binary Search are:
@@ -9,6 +10,7 @@ Binary Search Algorithm: The basic steps to perform Binary Search are:
 5. Repeatedly check from the second point until the value is found or the interval is empty.
 
 Recursive implementation of Binary Search:
+'''
 
   def binarySearch(arr, l, r, x):
     # Check base case
@@ -42,7 +44,7 @@ if result != -1:
 else:
     print("Element is not present in array")
 
-Iterative implementation of Binary Search:
+" Iterative implementation of Binary Search:" 
 
   def binarySearch(arr, l, r, x):
     while l <= r:
@@ -75,9 +77,11 @@ if result != -1:
 else:
     print("Element is not present in array")
 
+'''
 Note: Here we are using:  **** int mid = low + (high – low)/2;   ****
 instead of int mid = (low + high)/2; because if we calculate the middle index 
 like this means our code is not 100% correct, it contains bugs.
 That is, it fails for larger values of int variables low and high. 
 Specifically, it fails if the sum of low and high is greater than the maximum positive int value(2^31 – 1 ).
 The sum overflows to a negative value and the value stays negative when divided by 2. 
+'''
