@@ -1,4 +1,4 @@
-<a href="https://raw.githubusercontent.com/HarshSonaiya/DSA-with-Python-/main/Separate chaining in Hashing _ Practice _ GeeksforGeeks.pdf">View PDF</a>
+<a href="https://raw.githubusercontent.com/HarshSonaiya/DSA-with-Python-/Hashing/main/Separate chaining in Hashing _ Practice _ GeeksforGeeks.pdf">View PDF</a>
 
 code :
 
